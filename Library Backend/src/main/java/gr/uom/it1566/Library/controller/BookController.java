@@ -15,7 +15,7 @@ import reactor.core.publisher.Flux;
 public class BookController {
 
     private final BookService bookService;
-    @PostMapping("/search")
+    @GetMapping("/search")
     public Flux<BookEntity> searchBooks(@RequestBody SearchBookDto dto) {
         return bookService.searchBooks(dto.getQuery());
     }
