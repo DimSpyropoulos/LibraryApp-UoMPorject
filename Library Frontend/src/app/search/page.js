@@ -15,7 +15,7 @@ export default function SearchPage() {
         }
 
         try {
-            const response = await axiosInstance.post('/books/search', {
+            const response = await axiosInstance.get('/books/search', {
                 query: searchQuery
             });
 
@@ -36,7 +36,7 @@ export default function SearchPage() {
 
 
         try {
-            const response = await axiosInstance.post('/books/search', {
+            const response = await axiosInstance.get('/books/search', {
                 query: ""
             });
 
