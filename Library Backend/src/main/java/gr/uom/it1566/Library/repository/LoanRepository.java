@@ -7,7 +7,7 @@ import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 // Δηλώνει το LoanRepository που επεκτείνει το R2dbcRepository για την οντότητα LoanEntity
-public interface LoanRepository extends R2dbcRepository<LoanEntity, String> {
+public interface LoanRepository extends R2dbcRepository<LoanEntity, Integer> {
 
     // Μέθοδος για εύρεση όλων των δανείων για έναν χρήστη με βάση το userId
    Flux<LoanEntity> findAllByUserIdAndOngoingTrue(Long userId);
