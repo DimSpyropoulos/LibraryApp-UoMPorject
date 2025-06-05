@@ -3,13 +3,13 @@ spring:
     name: Library
   r2dbc:
     url: r2dbc:pool:postgres://localhost:5432/library_db
-    username: dimitris
-    password: d1m1tr1s3
+    username: username
+    password: password
   flyway:
       url: jdbc:postgresql://localhost:5432/library_db
       locations: classpath:db/migration
-      user: dimitris
-      password: d1m1tr1s3
+      user: username
+      password: password
       enabled: true
       baseline-on-migrate: true
 
